@@ -8,21 +8,33 @@ class Card extends Component {
     render() {
         return (
             <View>
-                <Text>พรุ่งนี้ค่อย</Text>
-                <Text>ป็อบ ปองกูล</Text>
+
                 <CardSection>
                     <Image 
-                    style={{ width: 450, height: 450}}
-                        source={{uri: 'https://i.ytimg.com/vi/YCaGYUIfdy4/maxresdefault.jpg' }} 
+                    style={{ width: 100, height: 100}}
+                        source={{uri: 'https://upload.wikimedia.org/wikipedia/th/d/d0/Cocktail_band.jpg' }} 
                     />
+                    <Text>ค็อกเทล</Text>
+                    <Text>โปรดเถิดรัก</Text>
                 </ CardSection>
 
                 <CardSection>
-                    <View style={{ width:100 }}> 
-                    <Button
-                        title="Click"
-                        color="#841584"
-                    />
+                         <View style={{justifyContent: 'center', alignItems: 'center'}}> 
+                            <Image 
+                            style={{ width: 300, height: 300}}
+                            source={{uri: 'https://i.ytimg.com/vi/YCaGYUIfdy4/maxresdefault.jpg' }} 
+                            />
+                        </View>
+                </ CardSection>
+
+                <CardSection>
+                    <View style={{justifyContent: 'center', alignItems: 'center'}}> 
+                        <View style={{ width:100 }}> 
+                            <Button
+                                title="Click"
+                                color="#841584"
+                            />
+                        </View>
                     </View>
                 </ CardSection>
             </View>
@@ -31,14 +43,15 @@ class Card extends Component {
 }
 
 //style
-const style={
-    button: { 
+/*const style={
+    Button: { 
         justifyContent: 'center',
-        alignItem: 'center',
+        alignItems: 'center',
         marginTop: 10
     }
-}
+}*/
        
+
 
 // export
 export default Card;
