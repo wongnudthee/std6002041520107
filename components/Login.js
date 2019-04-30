@@ -20,7 +20,7 @@ class Login extends Component{
     constructor(){
         super()
         this.state = {
-            email: 's6002041520026@email.kmutnb.ac.th',
+            email: 's6002041520107@email.kmutnb.ac.th',
             password: ''
         }
         this.onChangeEmail = this.onChangeEmail.bind(this);
